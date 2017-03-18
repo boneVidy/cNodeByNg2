@@ -1,0 +1,8 @@
+ <a md-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.path"
+  >
+    {{link.name}}
+  </a>
+
+<router-outlet></router-outlet>
