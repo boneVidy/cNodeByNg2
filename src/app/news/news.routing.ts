@@ -4,11 +4,12 @@ import {NewsComponent} from './news/news.component';
 import {NewsListComponent} from './news-list/news-list.component'
 const newsRoutes:Routes = [
   {
+      path: 'news',
       component: NewsComponent,
       children: [
           {
               path: '',
-              redirectTo: 'list',
+              redirectTo: '/list',
               pathMatch: 'full'
           },
           {
